@@ -9,18 +9,18 @@ function LoginForm() {
         <Card>
             <Card.Body>
                 <Form>
-                <Card.Title  > Login form for users with account 
+                <Card.Title  > Регистрирани потребители 
                    </Card.Title>
                     <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Email address</Form.Label>
-                        <Form.Control type="email" placeholder="Enter email" />
+                        <Form.Label>Имейл</Form.Label>
+                        <Form.Control type="email" placeholder="Въведи имейл" />
                     </Form.Group>
                     <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Password</Form.Label>
-                        <Form.Control type="password" placeholder="Password" />
+                        <Form.Label>Парола</Form.Label>
+                        <Form.Control type="password" placeholder="Въведи парола" />
                     </Form.Group>
                     <Button variant="primary" type="submit">
-                        Login
+                        Влез
                     </Button>
                 </Form>
             </Card.Body>
@@ -29,21 +29,21 @@ function LoginForm() {
             <Card.Body>
              <Form>
     
-             <Card.Title> Login form for new users  </Card.Title>
+             <Card.Title> Регистрация </Card.Title>
                  <Form.Group className="mb-3" controlId="formBasicEmail">
-                     <Form.Label>Email address</Form.Label>
-                     <Form.Control type="email" placeholder="Enter email" />
+                     <Form.Label>Имейл</Form.Label>
+                     <Form.Control type="email" placeholder="Въведи имейл" />
                  </Form.Group>
                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                     <Form.Label>Password</Form.Label>
-                     <Form.Control type="password" placeholder="Password" />
+                     <Form.Label>Парола</Form.Label>
+                     <Form.Control type="password" placeholder="Въведи парола" />
                  </Form.Group>
                  <Form.Group className="mb-3" controlId="formBasicPassword">
-                     <Form.Label>Password</Form.Label>
-                     <Form.Control type="password" placeholder=" Repeat Password" />
+                     <Form.Label> Повтори парола</Form.Label>
+                     <Form.Control type="password" placeholder=" Повтори парола" />
                  </Form.Group>
                  <Button variant="primary" type="submit">
-                     Create account
+                    Създай акаунт
                  </Button>
              </Form>
          </Card.Body>

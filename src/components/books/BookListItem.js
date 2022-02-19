@@ -56,7 +56,7 @@ return (
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/12/4612.250.jpg'} alt={"Алиса в огледалния свят"}/>
           <div className="px-3 flex-grow-1  ">
               <div className="movie-vote badge bg-primary  ">
-                            {5}
+                            {7}
                         </div> 
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
@@ -90,24 +90,24 @@ return (
                 <hr className="my-9"></hr>
 
                 <div className="d-flex py-3">
-          <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/12/4850.250.jpg'} alt={"	Белорозка и Червенорозка"}/>
+          <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/10/4114.250.jpg'} alt={"Лакомото мече "}/>
           <div className="px-3 flex-grow-1  ">
               <div className="movie-vote badge bg-primary  ">
-                            {5}
+                            {9}
                         </div> 
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
-                      <h4 className="book-title"> Белорозка и Червенорозка</h4>  
+                      <h4 className="book-title">Лакомото мече </h4>  
             </div>
             </div>
                       <div className="fw-bold books-author">
-                      <h5 className="books-author">Братя Грим </h5>
+                      <h5 className="books-author">Емилиян Станев</h5>
                       </div>
                       <div className="fw-bold book-genre"> 
                       <h6 className="book-genre"> Приказка  </h6>
                       </div>
               <div className="book-overview pt-3">
-                  {"„Майката на двете сестри живяла дълги години щастлива край децата си. Тя взела със себе си двата розови храста и ги посадила пред прозореца си. Всяка година на тях цъфтели прекрасни бели и червени рози.“"}
+                  {"„Моята главна цел — пише Емилиян Станев, — е да възхитя малкия читател и да обогатя неговите асоциации. По този начин се опитвам да представя на децата природата и животните, без да изменям основната същност на явленията и характерните особености на животните. Аз не им казвам кое от тия животни е добро и кое зло — децата сами ще решат това по-добре от мен.““"}
               </div>
           </div>
       </div>
@@ -130,7 +130,7 @@ return (
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/13/5010.250.jpg'} alt={"Домашен слон"}/>
           <div className="px-3 flex-grow-1  ">
               <div className="movie-vote badge bg-primary  ">
-                            {5}
+                            {4}
                         </div> 
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
@@ -144,7 +144,7 @@ return (
                       <h6 className="book-genre"> Разкази за деца</h6>
                       </div>
               <div className="book-overview pt-3">
-                  {"„Майката на двете сестри живяла дълги години щастлива край децата си. Тя взела със себе си двата розови храста и ги посадила пред прозореца си. Всяка година на тях цъфтели прекрасни бели и червени рози.“"}
+                  {"„ И винаги, когато дойде някой на гости, тя показва снимката и започва да разказва как ще храним с нашата трева цял живот слона, като че той не е в зоологическата градина, а живее при нас, в нашия двор, под дълголетния дъб като силно, но кротко домашно животно, което позволява само на тях тримата да го изкарват на паша, да го яздят и си правят разходки…“"}
               </div>
           </div>
       </div>
@@ -163,7 +163,79 @@ return (
              <br />
                 <hr className="my-9"></hr>
 
+                <div className="d-flex py-3">
+          <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/00/147.250.jpg'} alt={"Ние, врабчетата"}/>
+          <div className="px-3 flex-grow-1  ">
+              <div className="movie-vote badge bg-primary  ">
+                            {8}
+                        </div> 
+              <div className="d-flex align-items-start justify-content-between" >
+                      <div className="d-flex justify-content-between align-items-center mb-8">
+                      <h4 className="book-title">	Ние, врабчетата</h4>  
+            </div>
+            </div>
+                      <div className="fw-bold books-author">
+                      <h5 className="books-author">Йордан Радичков</h5>
+                      </div>
+                      <div className="fw-bold book-genre"> 
+                      <h6 className="book-genre"> Разкази за деца</h6>
+                      </div>
+              <div className="book-overview pt-3">
+                  {"А особено пък ако човек е гладен, съвсем ще забрави всичко. Затуй, преди да продължа нататък, ще седна да закуся с ей това насекомо… Някой каза ли ми: Добър апетит! Благодаря, желая и на вас добър апетит!“"}
+              </div>
+          </div>
+      </div>
+            <br />
+                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                   <Button variant="outline-primary"> zip
+                   <FontAwesomeIcon icon={faFileZipper} />
+                   </Button> 
+                   <Button  variant="outline-primary"  > pdf
+                   <FontAwesomeIcon icon={ faFilePdf} />
+                   </Button>
+                   <Button  variant="outline-primary" >Чети онлайн
+                   <FontAwesomeIcon icon={faBookOpen}/>
+                   </Button>
+                </ButtonGroup>
+             <br />
+                <hr className="my-9"></hr>
 
+                <div className="d-flex py-3">
+          <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/00/42.250.jpg'} alt={"Небето е на всички"}/>
+          <div className="px-3 flex-grow-1  ">
+              <div className="movie-vote badge bg-primary  ">
+                            {5}
+                        </div> 
+              <div className="d-flex align-items-start justify-content-between" >
+                      <div className="d-flex justify-content-between align-items-center mb-8">
+                      <h4 className="book-title">Небето е на всички</h4>  
+            </div>
+            </div>
+                      <div className="fw-bold books-author">
+                      <h5 className="books-author">Джани Родари</h5>
+                      </div>
+                      <div className="fw-bold book-genre"> 
+                      <h6 className="book-genre"> Детски стихове и гатанки </h6>
+                      </div>
+              <div className="book-overview pt-3">
+                  {"Тази книжка съдържа повечето от най-хубавите стихотворения на вашия стар познат, италианския писател Джани Родари. Той отдавна не е сред живите, но мисля, че веселите му стихчета, приказки и романи още живеят и дълго ще бъдат четени и обичани от децата по света."}
+              </div>
+          </div>
+      </div>
+            <br />
+                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                   <Button variant="outline-primary"> zip
+                   <FontAwesomeIcon icon={faFileZipper} />
+                   </Button> 
+                   <Button  variant="outline-primary"  > pdf
+                   <FontAwesomeIcon icon={ faFilePdf} />
+                   </Button>
+                   <Button  variant="outline-primary" >Чети онлайн
+                   <FontAwesomeIcon icon={faBookOpen}/>
+                   </Button>
+                </ButtonGroup>
+             <br />
+                <hr className="my-9"></hr>
 
 
        </Card.Body>

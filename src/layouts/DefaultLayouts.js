@@ -9,7 +9,7 @@ function DefaultLayout(props) {
     return (
         <>
           <NavBar/>
-          <Container className="mt-5">
+          <Container  className="mt-5">
               <Row>
                 <Col xs={12} md={8}>
                   {props.left}

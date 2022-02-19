@@ -17,11 +17,13 @@ function BookList(props) {
 
 
     return (
-        
-        <Card>
+        <div className="mt-2 mt-md-3">
+                
+        <Card >
+           
             <Card.Body>
-                <div className="d-flex justify-content-between align-items-center mb-2">
-                    <Card.Title>Резултат</Card.Title>
+                <div className="d-flex justify-content-between align-items-center mt-2 mt-md-3 ">
+                    <Card.Title>Филтрирани книги</Card.Title>
                     <ButtonGroup aria-label="List switch">
                         <Button variant={listView ? 'primary': 'outline-primary'}
                             onClick={()=> setListView(true)}>
@@ -37,9 +39,11 @@ function BookList(props) {
                 <div className="row">
                     {renderMovies()}
                 </div>
+               
             </Card.Body>
+        
         </Card>
-
+    </div>
     )
 }
 export default BookList;

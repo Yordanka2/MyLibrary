@@ -5,10 +5,10 @@ import Genres from "./Genres";
 function Filters(props) {
     
     return (
-        <Card className="mt-2 mt-md-0">
+        <Card className="mt-2 mt-md-3">
             <Card.Body>
-                <Card.Title className="mb-3">Филтри</Card.Title>
-                
+                <Card.Title className="mb-3">Филтрирай</Card.Title>
+               
                     <SortBy/>
                     <Genres/>
                     <Button 

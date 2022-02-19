@@ -11,7 +11,7 @@ function SortBy(props) {
         },
         {
             value: "vote_average.asc",
-            title: "Най-нисък рейтинг",
+            title: " С най-нисък рейтинг",
         },
     ]
 
