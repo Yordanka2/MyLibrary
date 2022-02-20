@@ -1,6 +1,17 @@
+
+import ReviewsLayout from "../layouts/ReviewsLayout";
+import FormReviews from "../components/reviews/FormReviews"
+import BookReviews from "../components/reviews/BookReviews"
+
 function Reviews(props) {
+
     return (
-        <div>Reviews</div>
-    )
-}
+      <ReviewsLayout 
+        search={<FormReviews/>}
+        reviewsbook={<BookReviews/>}
+       
+        />
+    );
+  }
+
 export default Reviews;

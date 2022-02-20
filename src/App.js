@@ -6,7 +6,7 @@ import {
 } from "react-router-dom";
 
 import Home from "./pages/Home";
-import User from "./pages/User";
+import Reviews from "./pages/Reviews";
 import Forecast from "./pages/Forecast";
 import Books from "./pages/Books";
 
@@ -16,8 +16,8 @@ const routes = [
     element: <Home/>
   },
   {
-    path: '/user',
-    element: <User/>
+    path: '/reviews',
+    element: <Reviews/>
   },
   {
     path: '/forecast',

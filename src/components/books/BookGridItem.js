@@ -58,7 +58,7 @@ function BookGridItem (props) {
           <br />
           
           <div className="col-md-4">
-        <div className="grid-movie-container img-thumbnail mb-9">
+          <div className="grid-movie-container img-thumbnail mb-9">
                 <div className="d-flex">
                 <img className="book-poster w-50" 
                 src={'https://assets.chitanka.info/thumb/book-cover/12/4612.250.jpg'} alt={"Алиса в огледалния свят"}/>
