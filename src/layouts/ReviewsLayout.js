@@ -16,12 +16,12 @@ function ReviewsLayout(props) {
                <Col>
                   {props.search}
                </Col>
-            </Row>
-           
-               <Col>
-                  {props.reviewsbook}
-               </Col>
-            
+               </Row>
+            <Col sm={8}>
+             {props.reviewsbook}
+           </Col>
+               
+        
             
           </Container>
         </>

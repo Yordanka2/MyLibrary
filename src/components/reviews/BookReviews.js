@@ -22,9 +22,17 @@ function BookReviews (props) {
 
     return (
         <>
-     
-    
-            
+         <div className="mt-2 mt-md-3">
+                
+                <Card >
+                   
+                    <Card.Body>
+                    
+                        <Card.Title>Филтрирани книги</Card.Title>
+                       
+                           <hr/>
+                        <div className="row">
+                      
             <div className="col-md-4">
             <div className="grid-movie-container img-thumbnail mb-9">
            
@@ -84,9 +92,12 @@ function BookReviews (props) {
                      </div>
                 </div>
                 </div>    
-              
-           
-  
+                </div>
+                </Card.Body>
+        
+        </Card>
+    </div>
+   
   
                
         </>
