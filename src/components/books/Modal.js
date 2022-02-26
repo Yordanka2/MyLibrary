@@ -1,37 +1,43 @@
 
-import {  Modal } from "react-bootstrap";
+import {  Modal,MyVerticallyCenteredModal} from "react-bootstrap";
 import {useState} from "react";
 import {setShow } from "../../redux/actions";
 import {  Button, ButtonGroup } from "react-bootstrap";
+import FormReviews from "../reviews/FormReviews";
+import {  faRLList, faComment } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
-function ReadMore() {
+function LaunchModal(props) {
+ 
     const [show, setShow] = useState(false);
-  
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
   
     return (
       <>
-        <Button variant="primary" onClick={handleShow}>
-          Launch demo modal
+      <div  className= "  d-flex ">
+     
+        <Button variant="outline-success"   onClick={() => setShow(true)}>
+        <FontAwesomeIcon icon={ faComment} />
+          
+        
         </Button>
-  
-        <Modal show={show} onHide={handleClose}>
+      
+      </div>
+        <Modal
+          show={show}
+          onHide={() => setShow(false)}
+          dialogClassName="modal-90w"
+          
+        >
           <Modal.Header closeButton>
-            <Modal.Title>Modal heading</Modal.Title>
+            
+           
           </Modal.Header>
-          <Modal.Body>Woohoo, you're reading this text in a modal!</Modal.Body>
-          <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-              Close
-            </Button>
-            <Button variant="primary" onClick={handleClose}>
-              Save Changes
-            </Button>
-          </Modal.Footer>
+          <Modal.Body>
+          <FormReviews/>
+          </Modal.Body>
         </Modal>
       </>
     );
   }
-  
-export default ReadMore;
+
+  export default LaunchModal;

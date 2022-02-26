@@ -1,4 +1,4 @@
-import { Card, Form, Button, ButtonGroup } from "react-bootstrap";
+import { Card, Form, Button, ButtonGroup, Modal,ButtonToolbar} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faThList, faFileZipper } from '@fortawesome/free-solid-svg-icons';
@@ -8,6 +8,8 @@ import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import {  faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
 import {  faBahai } from '@fortawesome/free-solid-svg-icons';
+import {Link} from "react-router-dom";
+import LaunchModal from "../books/Modal"
 
 function BookListItem(props) {
 
@@ -18,12 +20,20 @@ return (
       <Card.Body>
       <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/11/4370.250.jpg'} alt={"101 далматинци"}/>
-          <div className="px-3 flex-grow-1  ">
-              <div className="book-vote badge bg-primary  "> {6}
-              </div> 
+          <div className="px-3 flex-grow-1 " >
+              <div className= "d-flex align-items-start justify-content-between ">
+              <div className="book-vote badge bg-primary">
+                  {6}
+               </div>
+               <div>
+               <LaunchModal/>
+              </div>
+        </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
+                     <Link to={`/books/${1}`}>
                       <h4 className="book-title"> 101 далматинци</h4>  
+                      </Link>
             </div>
             </div>
                       <div className="fw-bold books-author">
@@ -37,8 +47,12 @@ return (
               </div>
           </div>
       </div>
-            <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+           
+
+         <div className=" d-flex align-items-start  justify-content-between">
+            <ButtonGroup  size="mb-2" ClassName=" d-flex">
+           
+             <div ClassName="btn-group btn-group-ms-2">
                    <Button variant="outline-primary"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -48,19 +62,31 @@ return (
                    <Button  variant="outline-primary" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
+             </div>    
                 </ButtonGroup>
+         </div>
              <br />
                 <hr className="my-9"></hr>
     
       <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/12/4612.250.jpg'} alt={"Алиса в огледалния свят"}/>
           <div className="px-3 flex-grow-1  ">
+          <div className="d-flex align-items-start justify-content-between" >
               <div className="movie-vote badge bg-primary  ">
                             {7}
                         </div> 
+                 <div>
+                 <LaunchModal/>
+                </div>
+              </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
+
+                      <Link to={`/books/${2}`}>
                       <h4 className="book-title"> Алиса в огледалния свят</h4>  
+                      </Link>
+
+                      
             </div>
             </div>
                       <div className="fw-bold books-author">
@@ -92,12 +118,22 @@ return (
                 <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/10/4114.250.jpg'} alt={"Лакомото мече "}/>
           <div className="px-3 flex-grow-1  ">
+          <div className="d-flex align-items-start justify-content-between" >
               <div className="movie-vote badge bg-primary  ">
                             {9}
                         </div> 
+                        <div>
+                 <LaunchModal/>
+                </div>
+                </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
+
+
+                      <Link to={`/books/${3}`}>
                       <h4 className="book-title">Лакомото мече </h4>  
+                      </Link>
+                   
             </div>
             </div>
                       <div className="fw-bold books-author">
@@ -129,12 +165,20 @@ return (
                 <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/13/5010.250.jpg'} alt={"Домашен слон"}/>
           <div className="px-3 flex-grow-1  ">
+          <div className="d-flex align-items-start justify-content-between" >
               <div className="movie-vote badge bg-primary  ">
                             {4}
                         </div> 
+                        <div>
+                 <LaunchModal/>
+                </div>
+                </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
-                      <h4 className="book-title">Домашен слон</h4>  
+                      <Link to={`/books/${4}`}>
+                      <h4 className="book-title">Домашен слон</h4> 
+                      </Link>
+                        
             </div>
             </div>
                       <div className="fw-bold books-author">
@@ -166,12 +210,21 @@ return (
                 <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/00/147.250.jpg'} alt={"Ние, врабчетата"}/>
           <div className="px-3 flex-grow-1  ">
+          <div className="d-flex align-items-start justify-content-between" >
               <div className="movie-vote badge bg-primary  ">
                             {8}
                         </div> 
+                        <div>
+                 <LaunchModal/>
+                </div>
+                </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
+                      
+                      <Link to={`/books/${5}`}>
                       <h4 className="book-title">	Ние, врабчетата</h4>  
+                      </Link>
+                       
             </div>
             </div>
                       <div className="fw-bold books-author">
@@ -203,12 +256,21 @@ return (
                 <div className="d-flex py-3">
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/00/42.250.jpg'} alt={"Небето е на всички"}/>
           <div className="px-3 flex-grow-1  ">
+          <div className="d-flex align-items-start justify-content-between" >
               <div className="movie-vote badge bg-primary  ">
                             {5}
                         </div> 
+                        <div>
+                 <LaunchModal/>
+                </div>
+                </div>
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
-                      <h4 className="book-title">Небето е на всички</h4>  
+
+                      <Link to={`/books/${6}`}>
+                      <h4 className="book-title">Небето е на всички</h4>    
+                      </Link>
+                       
             </div>
             </div>
                       <div className="fw-bold books-author">

@@ -25,11 +25,11 @@ function BookList(props) {
                 <div className="d-flex justify-content-between align-items-center mt-2 mt-md-3 ">
                     <Card.Title>Филтрирани книги</Card.Title>
                     <ButtonGroup aria-label="List switch">
-                        <Button variant={listView ? 'primary': 'outline-primary'}
+                        <Button variant={listView ? 'success': 'outline-success'}
                             onClick={()=> setListView(true)}>
                             <FontAwesomeIcon icon={faThList}/>
                         </Button>
-                        <Button variant={listView ? 'outline-primary': 'primary'}
+                        <Button variant={listView ? 'outline-success': 'success'}
                             onClick={()=> setListView(false)}>
                             <FontAwesomeIcon icon={faGripHorizontal}/>
                         </Button>

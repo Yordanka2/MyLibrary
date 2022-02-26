@@ -28,7 +28,7 @@ function BookReviews (props) {
                    
                     <Card.Body>
                     
-                        <Card.Title>Филтрирани книги</Card.Title>
+                        <Card.Title>Ревюта на  книги</Card.Title>
                        
                            <hr/>
                         <div className="row">

@@ -13,11 +13,11 @@ function ReviewsLayout(props) {
           <Container  fluid  className="ms-2 py-2"  >
          
             <Row>
-               <Col>
+               <Col sm={11} >
                   {props.search}
                </Col>
                </Row>
-            <Col sm={8}>
+            <Col sm={11}>
              {props.reviewsbook}
            </Col>
                

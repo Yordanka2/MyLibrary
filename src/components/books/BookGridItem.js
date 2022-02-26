@@ -7,7 +7,9 @@ import {  faFilePdf } from '@fortawesome/free-solid-svg-icons';
 import {  faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
 import {  faBahai } from '@fortawesome/free-solid-svg-icons';
-import ReadMore from "../books/Modal";
+
+import {Link} from "react-router-dom";
+import LaunchModal from "../books/Modal"
 
 function BookGridItem (props) {
     
@@ -18,21 +20,27 @@ function BookGridItem (props) {
         <>
       <div className="col-md-4">
       <div className="grid-movie-container img-thumbnail mb-9">
-                <div className="d-flex">
+      <div className="d-flex">
                 <img className="book-poster w-50" 
                 src={'https://assets.chitanka.info/thumb/book-cover/11/4370.250.jpg'} alt={"101 далматинци"}/>
-                   
+             
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title"> 101 далматинци</h10> </div>
+                       <Link to={`/books/${1}`}>
+                      <h6 className="book-title"> 101 далматинци</h6>  
+                      </Link>
+                       
                         <div className="books-author">
                         <h11 className="books-author"> Доуди Смит </h11> </div>
-                 
+                 </div>
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre"> Роман  </h12>  
-                       <div className="book-vote badge bg-primary  "> {6} </div>
-                        
-            </div>
+                         <div className="book-vote badge bg-primary  "> {6} </div>
+                         <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
+                                                                             
+                      
+                       
+                     </div>
          </div>
 
 
@@ -65,13 +73,17 @@ function BookGridItem (props) {
                    
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title"> Алиса в огледалния свят</h10> </div>
+                       <Link to={`/books/${2}`}>
+                       <h6 className="book-title"> Алиса в огледалния свят</h6> 
+                        </Link>
+                        </div>
                         <div className="books-author">
                         <h11 className="books-author"> Луис Карол  </h11> </div>
                  
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre"> Роман  </h12>  
                        <div className="book-vote badge bg-primary  "> {7} </div>
+                       <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
                         
             </div>
          </div>
@@ -105,13 +117,17 @@ function BookGridItem (props) {
                    
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title"> Лакомото мече </h10> </div>
+                       <Link to={`/books/${3}`}>
+                       <h6 className="book-title"> Лакомото мече </h6>
+                        </Link>
+                      </div>
                         <div className="books-author">
                         <h11 className="books-author"> Емилиян Станев  </h11> </div>
                  
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre"> Приказка   </h12>  
                        <div className="book-vote badge bg-primary  "> {9} </div>
+                       <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
                         
             </div>
          </div>
@@ -146,13 +162,18 @@ function BookGridItem (props) {
                    
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title">Домашен слон</h10> </div>
+
+                       <Link to={`/books/${4}`}>
+                       <h6 className="book-title">Домашен слон</h6> 
+                        </Link>
+                         </div>
                         <div className="books-author">
                         <h11 className="books-author"> Стоян Даскалов   </h11> </div>
                  
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre">  Разкази за деца  </h12>  
                        <div className="book-vote badge bg-primary  "> {4} </div>
+                       <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
                         
             </div>
          </div>
@@ -185,13 +206,17 @@ function BookGridItem (props) {
                    
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title">Ние, врабчетата</h10> </div>
+                       <Link to={`/books/${5}`}>
+                       <h6 className="book-title">Ние, врабчетата </h6> 
+                        </Link>
+                         </div>
                         <div className="books-author">
                         <h11 className="books-author">Йордан Радичков</h11> </div>
                  
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre">Разкази за деца</h12>  
                        <div className="book-vote badge bg-primary"> {8} </div>
+                       <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
                         
             </div>
          </div>
@@ -224,13 +249,17 @@ function BookGridItem (props) {
                    
             <div className="px-2">
                        <div className="fw-bold book-titl mb-9">
-                        <h10 className="book-title">Небето е на всички</h10> </div>
+                       <Link to={`/books/${6}`}>
+                       <h6 className="book-title">Небето е на всички</h6>  
+                        </Link>
+                         </div>
                         <div className="books-author">
                         <h11 className="books-author">Джани Родари</h11> </div>
                  
             <div className=" book-genre py-2"> 
                         <h12 className="book-genre">Детски стихове и гатанки </h12>  
                        <div className="book-vote badge bg-primary"> {6} </div>
+                       <div  className="  d-flex py-3 ms-1" > <LaunchModal/> </div>
                         
             </div>
          </div>
