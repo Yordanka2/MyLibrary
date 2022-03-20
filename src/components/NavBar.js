@@ -17,6 +17,8 @@ function NavBar() {
                     <Nav.Link as={Link} to="/">Начална страница </Nav.Link>
 
                     <Nav.Link as={Link} to="/books">Книги</Nav.Link>
+
+                    <Nav.Link as={Link} to="/forum">Форум</Nav.Link>
                     
                 </Nav>
                 </Navbar.Collapse>

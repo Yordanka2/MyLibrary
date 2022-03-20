@@ -9,7 +9,7 @@ import Home from "./pages/Home";
 
 import Books from "./pages/Books";
 import BookDetails from "./pages/BookDetails";
-
+import Forum from "./pages/Forum";
 
 const routes = [
   {
@@ -24,6 +24,10 @@ const routes = [
    {
     path: '/books/:id',
     element: <BookDetails/>
+  },
+  {
+    path: '/forum',
+    element: <Forum/>
   },
  
 ]
