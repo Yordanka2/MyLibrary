@@ -10,6 +10,7 @@ import Home from "./pages/Home";
 import Books from "./pages/Books";
 import BookDetails from "./pages/BookDetails";
 import Forum from "./pages/Forum";
+import CurrentForumPage from "./pages/CurrentForumPage";
 
 const routes = [
   {
@@ -29,7 +30,10 @@ const routes = [
     path: '/forum',
     element: <Forum/>
   },
- 
+  {
+    path: '/forum/:id',
+    element: <CurrentForumPage/>
+  },
 ]
 
 function App() {
