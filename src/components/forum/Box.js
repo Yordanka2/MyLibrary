@@ -1,10 +1,9 @@
-import { Card, Form, Button, ButtonGroup, Modal,ButtonToolbar,Tabs,Tab,Sonnet,} from "react-bootstrap";
+import { Card, Form, Button, ButtonGroup, Modal,ButtonToolbar,Tabs,Tab,Sonnet,ListGroup} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import { faThList, faFileZipper } from '@fortawesome/free-solid-svg-icons';
 
 import {  faList } from '@fortawesome/free-solid-svg-icons';
-
 
 import {  faBookOpen } from '@fortawesome/free-solid-svg-icons';
 
@@ -102,34 +101,34 @@ return (
             
          </div>
          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-             <Tab eventKey="review" title="Ревюта">
-              
-               <Card>
              
-                <ReviewLayout
-                  left={<UserInformation/>}
-                  right={<BookReview />} />
 
-              </Card>
-            
-             </Tab>
-
-             <Tab eventKey="addreview" title="Добави ревю">
+             <Tab eventKey="addreview" title="Създай тема">
 
              <Card>
             <Card.Body>
                 <Form>
                
                 <Form.Group className="mb-3" controlId="formBasicGrade">
-                        <Form.Label size="sm">Оцени книгата </Form.Label>
-                        <ButtonToolbar aria-label="Toolbar with button groups">
-                     <ButtonGroup className="me-2" aria-label="First group" variant="outline-success">
-                     <Button  variant="outline-success" >1 </Button> <Button variant="outline-success">2</Button> <Button variant="outline-success">3</Button> <Button variant="outline-success">4</Button>
-                     <Button variant="outline-success">5</Button> <Button variant="outline-success" >6</Button> <Button variant="outline-success">7</Button> <Button variant="outline-success">8</Button>
-                     <Button variant="outline-success">9</Button> <Button variant="outline-success">10</Button> 
-                     </ButtonGroup>
-                    </ButtonToolbar>
+                        <Form.Label size="sm">Избери подсекция  </Form.Label>
+   
+   <div class="dropdown">
+         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+             Избери подсекция
+         </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+               <li><a class="dropdown-item" href="#">Препоръки</a></li>
+               <li><a class="dropdown-item" href="#"> Лично творчество</a></li>
+               <li><a class="dropdown-item" href="#">Общи приказки</a></li>
+               <li><a class="dropdown-item" href="#">Забавни истории</a></li>
+               <li><a class="dropdown-item" href="#">Начинания</a></li>
+          </ul>
+    </div>
+
+
                     </Form.Group>
+
+
                        <Form.Group className="mb-3" controlId="formBasicInformation">
                         <Form.Label size="sm" >Допълнителна информация</Form.Label>
                         <Form.Control type="information" size="sm" placeholder="Въведи допълнителна информация" />
