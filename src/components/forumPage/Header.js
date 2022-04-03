@@ -5,7 +5,10 @@ import {
   Col,
   Card,
 } from "react-bootstrap";
-
+import {faList } from "@fortawesome/free-solid-svg-icons";
+import { faThList, faFileZipper } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import {Link} from "react-router-dom";
 function Header(props) {
     return (
  <>
@@ -18,7 +21,10 @@ function Header(props) {
              <div className=" d-flex align-items-start  justify-content-between md-3">
               <div id="site-description" >
                    <h3 class="text-lg-start fw-normal"> Форуми на Книжко </h3>
+                   
+            
                    <p class="text-sm-start fst-italic" > където се събират читатели</p>
+                   <p class="text-start text-dark "> <h5> Подсекция: Общи приказки  </h5></p>
                    </div>      
                 <form id="search" className="ms-3 py-3">
                  <fieldset>
@@ -31,8 +37,6 @@ function Header(props) {
         </div>
   </div>
   
-
-  <a href="#" class="card-link" class="text-start text-dark "> <h5> Общи приказки  </h5></a>
       <Card>
   <div id="site-description" >
                    
@@ -44,7 +48,43 @@ function Header(props) {
 
    
     </Row>
-   
+  
+       <Row className="py-3">
+        <Card className="py-3">
+        <a href="#" class="card-link" class="text-start text-dark "> <h6> Семейство сложи къщичка за книги пред дома си в Якоруда </h6></a>
+         <p class="text-start fst-italic">от pechkov » 13 октомври 2020, 15:42 </p> 
+        </Card>
+        <Card className="py-3">
+        <a href="#" class="card-link" class="text-start text-dark "> <h6> Странно ми е, че няма нищо от Мария Монтесори. </h6></a>
+         <p class="text-start fst-italic">т cristo » 15 април 2022, 10:07 </p> 
+        </Card>
+        <Card className="py-3 align-items">
+                
+                <a href="#" class="card-link" class="text-start text-dark "> 
+        
+                <h6> Английско-български речник за Kindle </h6> </a>
+               <p class="text-start fst-italic">от bbfl » 22 април 2021, 11:01 </p> 
+               
+                          
+                          
+             
+                        
+                     
+        </Card>
+        
+        <Card className="py-3">
+        <a href="#" class="card-link" class="text-start text-dark "> <h6> Търся книга на англиски, средно ниво </h6></a>
+         <p class="text-start fst-italic">от iafko69 » 28 май 2021, 21:41 </p> 
+        </Card>
+        <Card className="py-3">
+        <a href="#" class="card-link" class="text-start text-dark "> <h6> Най-добрите книги за 2021г.</h6></a>
+         <p class="text-start fst-italic">от Читател » 04 декември 2021, 01:16 </p> 
+        </Card>
+
+       </Row>
+
+
+  
    
  </>
 
