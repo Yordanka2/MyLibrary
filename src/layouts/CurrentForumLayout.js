@@ -4,22 +4,20 @@ import {
   Row,
   Col,
 } from "react-bootstrap";
+import Navbar from "../components/NavBar";
+
 
 function CurrentForumLayout(props) {
     return (
         <>
-          <NavBar/>
-          <Container  className="mt-5">
-              <Row>
-                <Col >
+        <NavBar/>
+          <Container >
+              <Row className="justify-content-space-between">
+                <Col  >
                   {props.left}
                 </Col>
 
-                <Col >
-                  {props.right}
-                
-                </Col>
-
+              
                 
               </Row>
           </Container>

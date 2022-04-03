@@ -24,9 +24,6 @@ return (
       
 
                      
-                       
-           
-
              <div className="form-label  justify-content-space-between">
              <li class="row">
                       
@@ -100,58 +97,14 @@ return (
          <div className=" d-flex align-items-start  justify-content-between">
             
          </div>
-         <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
-             
-
-             <Tab eventKey="addreview" title="Създай тема">
-
-             <Card>
-            <Card.Body>
-                <Form>
-               
-                <Form.Group className="mb-3" controlId="formBasicGrade">
-                        <Form.Label size="sm">Избери подсекция  </Form.Label>
-   
-   <div class="dropdown">
-         <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-             Избери подсекция
-         </button>
-          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-               <li><a class="dropdown-item" href="#">Препоръки</a></li>
-               <li><a class="dropdown-item" href="#"> Лично творчество</a></li>
-               <li><a class="dropdown-item" href="#">Общи приказки</a></li>
-               <li><a class="dropdown-item" href="#">Забавни истории</a></li>
-               <li><a class="dropdown-item" href="#">Начинания</a></li>
-          </ul>
-    </div>
+        
 
 
-                    </Form.Group>
-
-
-                       <Form.Group className="mb-3" controlId="formBasicInformation">
-                        <Form.Label size="sm" >Допълнителна информация</Form.Label>
-                        <Form.Control type="information" size="sm" placeholder="Въведи допълнителна информация" />
-                        </Form.Group>
-                        
-                    
-                    <Button variant="success" type="submit">
-                        Публикувай
-                    </Button>
-                </Form>
-            </Card.Body>
-    
-     </Card>
-            
-          </Tab>
-           
-          </Tabs>
-                
-    
-      
-       </Card.Body>
-      </Card>
-  </>
+</Card.Body>
+</Card>
+</>
 )
 }
+
+
 export default Box;
