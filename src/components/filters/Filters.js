@@ -12,7 +12,7 @@ function Filters(props) {
                     <SortBy/>
                     <Genres/>
                     <Button 
-                        variant="primary" 
+                        variant="outline-success" 
                         type="submit">
                         Намери
                     </Button>

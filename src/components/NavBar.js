@@ -8,7 +8,7 @@ import { Link } from 'react-router-dom';
 
 function NavBar() {
     return (
-        <Navbar bg="light" expand="lg" >
+        <Navbar bg="light"  expand="lg" >
             <Container>
             <Navbar.Brand href="#" bg="dark ">Онлайн библиотека за деца</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -19,6 +19,8 @@ function NavBar() {
                     <Nav.Link as={Link} to="/books">Книги</Nav.Link>
 
                     <Nav.Link as={Link} to="/forum">Форум</Nav.Link>
+
+                    <Nav.Link as={Link} to="/helpcenter">Помощ</Nav.Link>
                     
                 </Nav>
                 </Navbar.Collapse>

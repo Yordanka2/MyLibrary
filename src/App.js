@@ -11,6 +11,8 @@ import Books from "./pages/Books";
 import BookDetails from "./pages/BookDetails";
 import Forum from "./pages/Forum";
 import CurrentForumPage from "./pages/CurrentForumPage";
+import HelpCenter from "./pages/HelpCenter";
+
 
 const routes = [
   {
@@ -34,6 +36,11 @@ const routes = [
     path: '/forum/:id',
     element: <CurrentForumPage/>
   },
+  {
+    path: '/helpcenter',
+    element: <HelpCenter/>
+  },
+
 ]
 
 function App() {
@@ -55,5 +62,6 @@ function App() {
     </BrowserRouter>
   );
 }
+
 
 export default App;

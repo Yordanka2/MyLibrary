@@ -11,11 +11,13 @@ function ForumLayout(props) {
         <>
           <NavBar/>
 
-          
-          <Container  className="mt-5">
+       
 
-            
-              <label for="formGroupExampleInput" class="form-label"> <p class="text-lg-center" ><h4>Форума на Книжко </h4> </p>  <img className="book-poster" class="img-thumbnail" src={'https://www.elana.net/ckfinder/userfiles/images/2013/ELANATrading/stacked-books-education.jpg'} /> </label>
+          <Container  className="mt-5">
+         
+             <div className="align-center">
+              <label for="formGroupExampleInput" class="form-label"> <p class="text-lg-center text-info" ><h4>Форума на Книжко </h4> </p>  <img className="book-poster w-100" class="img-thumbnail" src={'https://thumbs.dreamstime.com/b/line-books-10575893.jpg '} /> </label>
+              </div>
               <div type="text-sm-center" class="form-control"  > <h6> В този форум всеки може да споделя своето мнение по разлини теми. 
               Най-честите теми са препоръки за книги  и  лично творчество. </h6> </div>
 
@@ -72,3 +74,5 @@ function ForumLayout(props) {
   }
 
 export default ForumLayout;
+
+//   //https://www.elana.net/ckfinder/userfiles/images/2013/ELANATrading/stacked-books-education.jpg

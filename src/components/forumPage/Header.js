@@ -20,12 +20,17 @@ function Header(props) {
          <div className="headerbar  ">
              <div className=" d-flex align-items-start  justify-content-between md-3">
               <div id="site-description" >
-                   <h3 class="text-lg-start fw-normal"> Форуми на Книжко </h3>
-                   
-            
+                   <h3  class="text-lg-start fw-normal text-reset"> Форуми на Книжко </h3>
                    <p class="text-sm-start fst-italic" > където се събират читатели</p>
+                   </div>
                    <p class="text-start text-dark "> <h5> Подсекция: Общи приказки  </h5></p>
-                   </div>      
+                   </div>  
+                   <div>
+                  
+                   <img className="book-poster w-100  rounded float-left" src="https://thumbs.dreamstime.com/b/banner-school-children-holding-reading-library-books-hands-grouped-easy-to-edit-164595827.jpg">
+                    </img>
+
+           
                 <form id="search" className="ms-3 py-3">
                  <fieldset>
                  <input type="texт-sm" title="Търсена по ключова дума" value="Търсене.." ></input>

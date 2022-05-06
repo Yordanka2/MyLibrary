@@ -51,7 +51,7 @@ return (
                      <div type="text" class="form-control"  > 
                      
                      <Link to={`/forum/${2}`}>
-                     <h5> Лично творчество </h5>
+                     <h5>  Лично творчество </h5>
 
                      </Link>
                      <div type="text" ><FontAwesomeIcon icon={ faList} />  В тази подсекция ще намерите различни авторски разкази,гатанки,приказки и т.н. </div>

@@ -37,7 +37,7 @@ function FormReviews() {
                     </ButtonToolbar>
                     </Form.Group>
                     
-                    <Button variant="success" type="submit">
+                    <Button variant="primary" type="submit">
                         Публикувай
                     </Button>
                 </Form>

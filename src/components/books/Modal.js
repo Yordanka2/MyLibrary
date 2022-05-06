@@ -16,7 +16,7 @@ function LaunchModal(props) {
       <div  className= "  d-flex ">
      
         <Button variant="outline-success"   onClick={() => setShow(true)}>
-        <FontAwesomeIcon icon={ faComment} />
+        <FontAwesomeIcon icon={ faComment  }/>
           
         
         </Button>

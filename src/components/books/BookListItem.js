@@ -32,7 +32,7 @@ return (
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
                      <Link to={`/books/${1}`}>
-                      <h4 className="book-title"> 101 далматинци</h4>  
+                      <h4 className="book-title text-special"> 101 далматинци</h4>  
                       </Link>
             </div>
             </div>
@@ -53,13 +53,13 @@ return (
             <ButtonGroup  size="mb-2" ClassName=" d-flex">
            
              <div ClassName="btn-group btn-group-ms-2">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
              </div>    
