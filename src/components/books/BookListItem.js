@@ -102,13 +102,13 @@ return (
       </div>
             <br />
                 <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -149,13 +149,13 @@ return (
       </div>
             <br />
                 <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -194,13 +194,13 @@ return (
       </div>
             <br />
                 <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -240,13 +240,13 @@ return (
       </div>
             <br />
                 <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -286,13 +286,13 @@ return (
       </div>
             <br />
                 <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
-                   <Button variant="outline-primary"> zip
+                   <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button  variant="outline-primary"  > pdf
+                   <Button  variant="outline-success"  > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" >Чети онлайн
+                   <Button  variant="outline-success" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>

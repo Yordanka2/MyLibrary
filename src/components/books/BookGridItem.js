@@ -49,13 +49,13 @@ function BookGridItem (props) {
                   {"Филмът разказва историята на петнадесет малки далматинчета, които са отвлечени от злодейката Круела де Вил, която иска да използва кожите им, за да си направи палта... "}        
                  </div>
              <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -93,13 +93,13 @@ function BookGridItem (props) {
               </div>
         
                     <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -137,13 +137,13 @@ function BookGridItem (props) {
               </div>
         
                     <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -183,13 +183,13 @@ function BookGridItem (props) {
               </div>
         
                     <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -226,13 +226,13 @@ function BookGridItem (props) {
               </div>
         
                     <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
@@ -269,13 +269,13 @@ function BookGridItem (props) {
               </div>
         
                     <ButtonGroup  size="sm-1" className="buttons  py-2" >
-                   <Button variant="outline-primary" size="sm"> zip
+                   <Button variant="outline-success" size="sm"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
-                   <Button   variant="outline-primary" size="sm"   > pdf
+                   <Button   variant="outline-success" size="sm"   > pdf
                    <FontAwesomeIcon icon={ faFilePdf} />
                    </Button>
-                   <Button  variant="outline-primary" size="sm" >Чети онлайн
+                   <Button  variant="outline-success" size="sm" >Чети онлайн
                    <FontAwesomeIcon icon={faBookOpen}/>
                    </Button>
                 </ButtonGroup>
