@@ -19,7 +19,7 @@ return (
           <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/11/4370.250.jpg'} alt={"101 далматинци"}/>
          </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-primary"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 

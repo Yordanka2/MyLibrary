@@ -1,20 +1,44 @@
-import BookListItem from "../books/BookListItem";
+import BookListItemView from "../books/BookListItemView";
 import BookGridItem from "../books/BookGridItem";
 import {Card, ButtonGroup, Button} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThList, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
 import {useState} from "react";
-import {setListView } from "../../redux/actions";
+import {useGetBooks} from "../../graphql/useRequest";
 
 function BookList(props) {
 
     
-    const [listView, setListView] = useState(true); 
-    const renderMovies = () => {
-     
-        return listView ? BookListItem() : BookGridItem();
+    const [listView, setListView] = useState(true);
+    const { data, error, isLoading, isSuccess } = useGetBooks();
+
+    const renderBooks = () => {
+
+        if(data?.books) {
+            return data.books.map(book => {
+                if(listView) {
+                    return <BookListItemView
+                        key={book._id}
+                        book={book}
+                    />
+                }
+                return null
+                //TODO render BookGridItemView
+                // return <BookListItemView
+                //     key={book._id}
+                //     book={book}
+                // />
+            })
+        }
+        return null;
+
+        // return listView ? BookListItem() : BookGridItem();
     }
 
+
+    if (error) return <h1>Something went wrong!</h1>;
+    if (isLoading) return <h1>Loading...</h1>;
+    console.log(data);
 
     return (
         <div className="mt-2 mt-md-3">
@@ -37,7 +61,7 @@ function BookList(props) {
                 </div>
                 <hr/>
                 <div className="row">
-                    {renderMovies()}
+                    {renderBooks()}
                 </div>
                
             </Card.Body>

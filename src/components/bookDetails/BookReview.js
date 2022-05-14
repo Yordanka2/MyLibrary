@@ -32,7 +32,7 @@ function BookReview (props) {
                          </div>
                   
         
-                            <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                            <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                            <Button  variant="outline-primary"> 
                            <EditIcon color="primary" /> 
                             </Button> 
@@ -50,7 +50,7 @@ function BookReview (props) {
                              </div>
                       
             
-                                <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                                <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 
                                 </Button> 
@@ -68,7 +68,7 @@ function BookReview (props) {
                              </div>
                       
             
-                                <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                                <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 
                                 </Button> 
@@ -87,7 +87,7 @@ function BookReview (props) {
                              </div>
                       
             
-                                <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                                <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 
                                 </Button> 

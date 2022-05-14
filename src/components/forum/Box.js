@@ -29,7 +29,7 @@ return (
                       
                     <label for="formGroupExampleInput" className="form-label flex-space-around ">
                         
-                         <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                         <div className = " d-flex justify-content flex-start"  class="form-control">  
                         
                          <dl class="icon" >
                           

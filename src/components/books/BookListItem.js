@@ -13,7 +13,6 @@ import LaunchModal from "../books/Modal"
 
 function BookListItem(props) {
 
-
 return (
     <>
     <Card >
@@ -50,9 +49,9 @@ return (
            
 
          <div className=" d-flex align-items-start  justify-content-between">
-            <ButtonGroup  size="mb-2" ClassName=" d-flex">
+            <ButtonGroup  size="mb-2" className=" d-flex">
            
-             <div ClassName="btn-group btn-group-ms-2">
+             <div className="btn-group btn-group-ms-2">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -101,7 +100,7 @@ return (
           </div>
       </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -148,7 +147,7 @@ return (
           </div>
       </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -193,7 +192,7 @@ return (
           </div>
       </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -239,7 +238,7 @@ return (
           </div>
       </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
@@ -285,7 +284,7 @@ return (
           </div>
       </div>
             <br />
-                <ButtonGroup  size="mb-2" ClassName="d-flex align-items-start justify-content-between">
+                <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
                    <Button variant="outline-success"> zip
                    <FontAwesomeIcon icon={faFileZipper} />
                    </Button> 
