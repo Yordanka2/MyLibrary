@@ -10,13 +10,13 @@ import {  faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import {  faBahai } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 
-function BookImage({props}) {
+function BookImageView({book}) {
 return (
     <>
     <Card >
       <Card.Body>
       <div className="d-flex py-3">
-          <img className="book-poster" variant="fluid" src={'https://assets.chitanka.info/thumb/book-cover/11/4370.250.jpg'} alt={"101 далматинци"}/>
+          <img className="book-poster" variant="fluid" src={book.image} alt={book.title}/>
          </div>
             <br />
                 <ButtonGroup  size="mb-2" className="d-flex align-items-start justify-content-between">
@@ -39,4 +39,4 @@ return (
   </>
 )
 }
-export default BookImage;
+export default BookImageView;

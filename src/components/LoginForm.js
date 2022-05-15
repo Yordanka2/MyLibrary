@@ -7,7 +7,7 @@ import {
 function LoginForm() {
     return (
         <Card>
-            <Card.Body>
+            <Card.Body className="ms-2 py-2">
                 <Form>
                 <Card.Title  > Регистрирани потребители 
                    </Card.Title>
