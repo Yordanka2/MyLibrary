@@ -14,8 +14,7 @@ import ReviewLayout  from "../../layouts/ReviewLayout";
 import UserInformation from "./UserInformation";
 import BookReview from "./BookReview";
 
-function BookText(props) {
-
+function BookText({book}) {
 
 return (
     <>
@@ -29,25 +28,25 @@ return (
               <div className="d-flex align-items-start justify-content-between" >
                       <div className="d-flex justify-content-between align-items-center mb-8">
                     
-                      <h4 className="book-title"> 101 далматинци</h4>  
+                      <h4 className="book-title">{book.title}</h4>
                       
             </div>
             </div>
                       <div className="fw-bold books-author">
-                      <h5 className="books-author"> Доуди Смит </h5>
+                      <h5 className="books-author">{book.author}</h5>
                       </div>
                       <div className="fw-bold book-genre"> 
-                      <h6 className="book-genre"> Роман  </h6>
+                      <h6 className="book-genre">{book.genre}</h6>
                       </div>
                       <div className="book-vote badge bg-success">
-                         Рейтинг : {6}
+                         Рейтинг : {book.rating}
                    </div>
               
           </div>
       </div>
            
          <div className=" d-flex align-items-start  justify-content-between">
-            
+             {book.description}
          </div>
          <Tabs defaultActiveKey="profile" id="uncontrolled-tab-example" className="mb-3">
              <Tab eventKey="review" title="Ревюта">

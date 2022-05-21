@@ -8,14 +8,15 @@ import {useGetBooks} from "../components/graphql/useRequest";
 function BookDetails(props) {
  
   const {id} = useParams();
+  const { data, error, isLoading, isSuccess } = useGetBook(id);
 
   const { data, error, isLoading, isSuccess } = useGetBooks();
 
 
     return (
       <LayoutBookDetails 
-        left={< BookImage/>}
-        right={<BookText/> } />
+        left={data?.book && <BookImage book={data.book}/>}
+        right={data?.book && <BookText book={data.book}/> } />
    
 );
 

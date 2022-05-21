@@ -37,7 +37,7 @@ function BookReviews (props) {
            
                        <div className="fw-bold book-titl mb-9">
                         <h10 className="book-title"> Ревю  от Георги: </h10> 
-                        <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                        <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                        <Button  variant="outline-primary"> 
                        <EditIcon color="primary" /> 
                         </Button> 
@@ -67,7 +67,7 @@ function BookReviews (props) {
            
                        <div className="fw-bold book-titl mb-9">
                         <h10 className="book-title"> Ревю  от Георги: </h10> 
-                        <ButtonGroup  size="ms-2" ClassName= " d-flex align-items-start  justify-content-between" >
+                        <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                        <Button  variant="outline-primary"> 
                        <EditIcon color="primary" /> 
                         </Button> 

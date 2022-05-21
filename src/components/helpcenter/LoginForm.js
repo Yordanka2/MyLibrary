@@ -34,7 +34,7 @@ function LoginForm() {
              
              <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success">  Възстановяване на парола</p>           
                          </div>
@@ -46,7 +46,7 @@ function LoginForm() {
 
               <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success">  Деактивиране на акаунт</p>           
                          </div>
@@ -55,7 +55,7 @@ function LoginForm() {
               </li>
               <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success">  Често задавани въпроси</p>           
                          </div>
@@ -64,7 +64,7 @@ function LoginForm() {
               </li>
               <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success">  Как да открия дадена книга</p>           
                          </div>
@@ -74,7 +74,7 @@ function LoginForm() {
               
               <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success"> Как да кача книга</p>           
                          </div>
@@ -83,7 +83,7 @@ function LoginForm() {
               </li>
               <li class="row">
                  <label for="formGroupExampleInput" className="form-label flex-space-around ">
-                        <div ClassName = " d-flex justify-content flex-start"  class="form-control">  
+                        <div className = " d-flex justify-content flex-start"  class="form-control">  
                          <div type="text">
                                 <p className ="text-success"> Често срещани грешки</p>           
                          </div>

@@ -25,7 +25,7 @@ function LaunchModal(props) {
         <Modal
           show={show}
           onHide={() => setShow(false)}
-          dialogClassName="modal-90w"
+          dialogclassName="modal-90w"
           
         >
           <Modal.Header closeButton>
