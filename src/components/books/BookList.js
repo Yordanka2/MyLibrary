@@ -1,11 +1,11 @@
 import BookListItemView from "../books/BookListItemView";
-import BookGridItemView from "../books/BookGridItemView";
+import BookGridItemView from "../books/BookGridItemView"
 import BookGridItem from "../books/BookGridItem";
 import {Card, ButtonGroup, Button} from "react-bootstrap";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThList, faGripHorizontal } from '@fortawesome/free-solid-svg-icons';
 import {useState} from "react";
-import {useGetBooks} from "../graphql/useRequest";
+import {useGetBooks} from "../../graphql/useRequest";
 
 function BookList(props) {
 
@@ -23,17 +23,12 @@ function BookList(props) {
                         book={book}
                     />
                 }
-
                 return <BookGridItemView
-                key={book._id}
-                book={book}
-                />
-                //return null
-                //TODO render BookGridItemView
-                // return <BookListItemView
-                //     key={book._id}
-                //     book={book}
-                // />
+                          
+                
+                     key={book._id}
+                     book={book}
+             />
             })
         }
         return null;

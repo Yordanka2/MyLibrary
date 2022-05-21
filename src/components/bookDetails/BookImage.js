@@ -10,7 +10,7 @@ import {  faBookOpen } from '@fortawesome/free-solid-svg-icons';
 import {  faBahai } from '@fortawesome/free-solid-svg-icons';
 import {Link} from "react-router-dom";
 
-function BookImage({props}) {
+function BookImage({book}) {
 return (
     <>
     <Card >

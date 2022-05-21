@@ -4,13 +4,15 @@ import BookImage from "../components/bookDetails/BookImage";
 import BookText from "../components/bookDetails/Text";
 import BookImageView from "../components/bookDetails/BookImageView";
 import TextView from "../components/bookDetails/TextView";
-import {useGetBooks} from "../components/graphql/useRequest";
+import {useGetBook} from "../graphql/useRequest";
+
+
 function BookDetails(props) {
  
   const {id} = useParams();
   const { data, error, isLoading, isSuccess } = useGetBook(id);
 
-  const { data, error, isLoading, isSuccess } = useGetBooks();
+  
 
 
     return (
