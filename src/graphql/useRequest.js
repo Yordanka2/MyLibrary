@@ -33,3 +33,20 @@ export function useGetBooks() {
         `);
     });
 }
+
+export function useGetBook(id) {
+    return useQuery("getBooks", async () => {
+        return await graphQLClient.request(gql`
+            query {
+                book(_id: "${id}") {
+                    _id
+                    title
+                    description
+                    image
+                    author
+                    rating
+                }
+            }
+        `);
+    });
+}
