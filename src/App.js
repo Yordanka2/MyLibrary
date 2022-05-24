@@ -12,6 +12,7 @@ import BookDetails from "./pages/BookDetails";
 import Forum from "./pages/Forum";
 import CurrentForumPage from "./pages/CurrentForumPage";
 import HelpCenter from "./pages/HelpCenter";
+import UserInfo from "./pages/UserInfo";
 
 
 const routes = [
@@ -40,7 +41,10 @@ const routes = [
     path: '/helpcenter',
     element: <HelpCenter/>
   },
-
+  {
+    path: '/userinfo',
+    element: <UserInfo/>
+  },
 ]
 
 function App() {

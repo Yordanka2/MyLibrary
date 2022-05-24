@@ -21,6 +21,8 @@ function NavBar() {
                     <Nav.Link as={Link} to="/forum">Форум</Nav.Link>
 
                     <Nav.Link as={Link} to="/helpcenter">Помощ</Nav.Link>
+
+                    <Nav.Link as={Link} to="/userinfo">Профил</Nav.Link>
                     
                 </Nav>
                 </Navbar.Collapse>
