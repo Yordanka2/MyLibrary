@@ -45,13 +45,7 @@ export function useGetBook(id) {
                     image
                     author
                     rating
-                
                 }
-                    
-            
-            }
-            
-                
             }
         `);
     });
