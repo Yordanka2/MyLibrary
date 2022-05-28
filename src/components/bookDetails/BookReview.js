@@ -17,7 +17,7 @@ import {
 import {  faBahai } from '@fortawesome/free-solid-svg-icons';
 import ReadMore from "../books/Modal";
 
-function BookReview (props) {
+function BookReview (review) {
    
     
 
@@ -27,7 +27,7 @@ function BookReview (props) {
                   <div className="row col mt-9 py-2 ">
                           
                       <div className="book-overview pt-3">
-                         {"Невероятен роман,които допада изключително както на по-малки така и на по-големи деца."}
+                         {review.opinion}
                          </div>
                   
         
@@ -47,8 +47,7 @@ function BookReview (props) {
                           <div className="book-overview pt-3">
                              {"Този роман е вечна класика,която е четена и ще продължи да бъде четена от всяко поколение."}
                              </div>
-                      
-            
+                            
                                 <ButtonGroup  size="ms-2" className= " d-flex align-items-start  justify-content-between" >
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 

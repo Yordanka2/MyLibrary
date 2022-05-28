@@ -1,14 +1,16 @@
-import FeaturedImage from "../components/FeaturedImage";
-import ReviewLayout from "../layouts/ReviewLayout";
-import UserInfroLayout from "../components/UserInfroLayout";
+import PersonalInformation from "../components/userInformation/PersonalInformation";
+import PublicInformation from "../components/userInformation/PublicInformation";
+import UserInfroLayout from "../layouts/UserInfroLayout";
+import LoginForm from "../components/LoginForm";
 
-function UserInfo(props) {
+function User(props) {
 
     return (
       <UserInfroLayout 
-        left={<FeaturedImage/>}
-        right={<LoginForm/>}/>
+        left={<PersonalInformation/>}
+ 
+    right={<PublicInformation/>} />
     );
   }
 
-export default UserInfo;
+export default User;

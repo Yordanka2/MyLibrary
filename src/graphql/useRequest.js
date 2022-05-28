@@ -45,8 +45,42 @@ export function useGetBook(id) {
                     image
                     author
                     rating
+                
                 }
+                    
+            
+            }
+            
+                
             }
         `);
     });
 }
+
+
+//review(_id: "${id}"{
+    //  _id
+ //     opinion
+//      bookAuthor
+ //     createBY
+ //     bookTitle
+  //    rating
+
+//  } 
+
+ /*   export function useGetReview() {
+        return useQuery("getBooks", async () => {
+            return await graphQLClient.request(gql`
+                query {
+                    review(_id: "${id}") {
+                        _id
+                        opinion
+                        
+                    
+                
+                    }
+                }
+            `);
+        });
+    
+*/

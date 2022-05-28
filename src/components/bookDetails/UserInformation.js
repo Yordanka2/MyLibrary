@@ -1,7 +1,7 @@
 import {Card, Form, Button, ButtonGroup,} from "react-bootstrap";
 
 
-function UserInformation(props) {
+function UserInformation(review) {
 
 
     return (
@@ -14,13 +14,13 @@ function UserInformation(props) {
                     <div className="px-2">
                         <div className=" book-titl mb-9 ">
 
-                            <h6 className="book-title"> Георги</h6></div>
+                            <h6 className="review-author"> {review.createBy}</h6></div>
 
 
                         <div className="books-rating">
-                            <h6 className="books-rating"> Рейтинг </h6></div>
+                            <h6 className="books-rating"> {review.rating} </h6></div>
 
-                        <div className="book-vote badge bg-success  "> {6} </div>
+                        <div className="book-vote badge bg-success  "> {review.rating} </div>
                     </div>
 
                 </div>
