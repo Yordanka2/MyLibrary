@@ -1,12 +1,21 @@
-import { useQuery } from "react-query";
-import { GraphQLClient, gql } from "graphql-request";
+import {useMutation, useQuery} from "react-query";
+import {GraphQLClient, gql} from "graphql-request";
+import {jsonToGraphQLQuery} from 'json-to-graphql-query';
+import {Cookies} from "react-cookie";
 
 const API_URL = 'http://localhost:3001/graphql';
+const cookies = new Cookies();
 
 const graphQLClient = new GraphQLClient(API_URL, {
-    headers: {
-        // Authorization: `Bearer ${process.env.API_KEY}`
-        'Content-Type': 'application/json',
+    headers: () => {
+        const token = cookies.get('token')
+        const headers = {
+            'Content-Type': 'application/json',
+        }
+        if (token) {
+            headers['Authorization'] = `Bearer ${token}`
+        }
+        return headers
     }
 });
 
@@ -51,30 +60,65 @@ export function useGetBook(id) {
     });
 }
 
+export function useCreateUser(userData) {
+    const createUserMutation = {
+        mutation: {
+            createUser: {
+                __args: {
+                    data: userData,
+                },
+            }
+        }
+    };
+    const createUserMutationRequest = jsonToGraphQLQuery(createUserMutation, {pretty: true});
+    return useMutation("createUser", async () => {
+        return await graphQLClient.request(createUserMutationRequest);
+    });
+}
+
+
+export function useCurrentUser() {
+    return useQuery("currentUser", async () => {
+        return await graphQLClient.request(gql`
+            query {
+                currentUser {
+                    _id
+                    roles
+                    firstName
+                    lastName
+                }
+            }
+        `);
+    }, {
+        refetchOnWindowFocus: false,
+        retry: 1,
+    });
+}
+
 
 //review(_id: "${id}"{
-    //  _id
- //     opinion
+//  _id
+//     opinion
 //      bookAuthor
- //     createBY
- //     bookTitle
-  //    rating
+//     createBY
+//     bookTitle
+//    rating
 
 //  } 
 
- /*   export function useGetReview() {
-        return useQuery("getBooks", async () => {
-            return await graphQLClient.request(gql`
-                query {
-                    review(_id: "${id}") {
-                        _id
-                        opinion
-                        
-                    
-                
-                    }
-                }
-            `);
-        });
-    
+/*   export function useGetReview() {
+       return useQuery("getBooks", async () => {
+           return await graphQLClient.request(gql`
+               query {
+                   review(_id: "${id}") {
+                       _id
+                       opinion
+
+
+
+                   }
+               }
+           `);
+       });
+
 */

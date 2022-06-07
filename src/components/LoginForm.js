@@ -2,55 +2,41 @@ import {
     Card,
     Form,
     Button,
+    Tabs,
+    Tab,
 } from "react-bootstrap";
 
+import RegisterForm from "./RegisterForm";
+
 function LoginForm() {
+
     return (
         <Card>
-            <Card.Body className="ms-2 py-2">
-                <Form>
-                <Card.Title  > Регистрирани потребители 
-                   </Card.Title>
-                    <Form.Group className="mb-3" controlId="formBasicEmail">
-                        <Form.Label>Имейл</Form.Label>
-                        <Form.Control type="email" placeholder="Въведи имейл" />
-                    </Form.Group>
-                    <Form.Group className="mb-3" controlId="formBasicPassword">
-                        <Form.Label>Парола</Form.Label>
-                        <Form.Control type="password" placeholder="Въведи парола" />
-                    </Form.Group>
-                    <Button variant="primary" type="submit">
-                        Влез
-                    </Button>
-                </Form>
+            <Card.Body className="p-5">
+                <Tabs defaultActiveKey="register" className="mb-3 nav-justified">
+                    <Tab eventKey="register" title="Регистрация">
+                        <RegisterForm/>
+                    </Tab>
+                    <Tab eventKey="login" title="Влез">
+                        <Form>
+                            <Form.Group className="mb-3" controlId="formBasicEmail">
+                                <Form.Label>Имейл</Form.Label>
+                                <Form.Control type="email" placeholder="Въведи имейл"/>
+                            </Form.Group>
+                            <Form.Group className="mb-3" controlId="formBasicPassword">
+                                <Form.Label>Парола</Form.Label>
+                                <Form.Control type="password" placeholder="Въведи парола"/>
+                            </Form.Group>
+                            <div className="d-grid gap-2">
+                                <Button variant="primary" className="text-white" type="submit">
+                                    Влез
+                                </Button>
+                            </div>
+                        </Form>
+                    </Tab>
+                </Tabs>
             </Card.Body>
-
-
-            <Card.Body>
-             <Form>
-    
-             <Card.Title> Регистрация </Card.Title>
-                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                     <Form.Label>Имейл</Form.Label>
-                     <Form.Control type="email" placeholder="Въведи имейл" />
-                 </Form.Group>
-                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                     <Form.Label>Парола</Form.Label>
-                     <Form.Control type="password" placeholder="Въведи парола" />
-                 </Form.Group>
-                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                     <Form.Label> Повтори парола</Form.Label>
-                     <Form.Control type="password" placeholder=" Повтори парола" />
-                 </Form.Group>
-                 <Button variant="primary" type="submit">
-                    Създай акаунт
-                 </Button>
-             </Form>
-         </Card.Body>
-    
-     </Card>
-            
-        
+        </Card>
     )
 }
 

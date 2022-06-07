@@ -45,7 +45,7 @@ function ForumLayout(props) {
            </Form.Group>
            
        
-                 <Button variant="primary" type="submit">
+                 <Button variant="primary" className="text-white" type="submit">
                        Публикувай
                  </Button>
           </Form>

@@ -80,7 +80,7 @@ function Filters(props) {
                     <SortBy/>
                     <Genres checkboxes={checkboxes}/>
                     <Button 
-                        variant="primary" 
+                        variant="primary" className="text-white" 
                         type="submit">
                         Намери
                     </Button>
