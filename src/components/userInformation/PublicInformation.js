@@ -35,7 +35,7 @@ function PublicInformation (props) {
       <img src="https://png.pngtree.com/png-clipart/20201209/original/pngtree-round-stars-design-png-image_5668528.jpg" class="card-img-top" alt="Ревюта" />
       <div class="card-body">
         
-        <p class="card-text"> Имате създадени 5 ревюта.</p>
+        <p class="card-text"> Имате създадени 5 ревюта до момента.</p>
       </div>
     </div>
   </div>

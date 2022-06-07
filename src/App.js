@@ -4,6 +4,7 @@ import {
   Routes,
   Route
 } from "react-router-dom";
+import Login from "./components/Login";
 
 import Home from "./pages/Home";
 
@@ -45,8 +46,25 @@ const routes = [
     path: '/userinfo',
     element: <UserInfo/>
   },
+{
+  path:'/linklist',
+   element:<LinkList/>
+},
+{
+
+    path:'/create',
+    element:<CreateLink/>
+},
+{
+
+  path:'/login',
+   element:<Login/>
+},
+
 ]
 
+
+c
 function App() {
 
   function getRoutes() {
