@@ -72,10 +72,10 @@ return (
                 <Form.Group className="mb-3" controlId="formBasicGrade">
                         <Form.Label size="sm">Оцени книгата </Form.Label>
                         <ButtonToolbar aria-label="Toolbar with button groups">
-                     <ButtonGroup className="me-2" aria-label="First group" variant="outline-success">
-                     <Button  variant="outline-success" >1 </Button> <Button variant="outline-success">2</Button> <Button variant="outline-success">3</Button> <Button variant="outline-success">4</Button>
-                     <Button variant="outline-success">5</Button> <Button variant="outline-success" >6</Button> <Button variant="outline-success">7</Button> <Button variant="outline-success">8</Button>
-                     <Button variant="outline-success">9</Button> <Button variant="outline-success">10</Button> 
+                     <ButtonGroup className="me-2" aria-label="First group" variant="outline-primary">
+                     <Button  variant="outline-primary" >1 </Button> <Button variant="outline-primary">2</Button> <Button variant="outline-success">3</Button> <Button variant="outline-success">4</Button>
+                     <Button variant="outline-primary">5</Button> <Button variant="outline-primary" >6</Button> <Button variant="outline-success">7</Button> <Button variant="outline-success">8</Button>
+                     <Button variant="outline-primary">9</Button> <Button variant="outline-primary">10</Button> 
                      </ButtonGroup>
                     </ButtonToolbar>
                     </Form.Group>
@@ -85,7 +85,7 @@ return (
                         </Form.Group>
                         
                     
-                    <Button variant="success" type="submit">
+                    <Button variant="outline-primary" type="submit">
                         Публикувай
                     </Button>
                 </Form>

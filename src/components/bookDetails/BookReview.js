@@ -70,7 +70,7 @@ function BookReview (review) {
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 
                                 </Button> 
-                                <Button  variant="outline-danger"  > 
+                                <Button  variant="danger"  > 
                                 <FontAwesomeIcon icon={ faTrashCan} />
                            </Button>
                            </ButtonGroup>
@@ -89,7 +89,7 @@ function BookReview (review) {
                                <Button  variant="outline-primary"> 
                                <EditIcon color="primary" /> 
                                 </Button> 
-                                <Button  variant="outline-danger"  > 
+                                <Button  variant="danger"  > 
                                 <FontAwesomeIcon icon={ faTrashCan} />
                            </Button>
                            </ButtonGroup>
